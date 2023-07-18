@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = server/app
+	url = https://github.com/curegit/stylegan-fastapi.git
