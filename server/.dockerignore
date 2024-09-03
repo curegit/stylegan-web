@@ -1,1 +1,9 @@
 **/.git
+**/__pycache__/
+**/.venv/
+**/venv/
+**/run/
+**/*.sqlite3
+**/*.lock
+**/*.log
+**/.mypy_cache/
