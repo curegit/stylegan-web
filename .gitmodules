@@ -1,3 +1,6 @@
 [submodule "server"]
 	path = server/app
 	url = https://github.com/curegit/stylegan-fastapi.git
+[submodule "client"]
+	path = client/app
+	url = https://github.com/curegit/stylegan-vue.git
