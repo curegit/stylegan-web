@@ -1,9 +1,11 @@
-FROM python:3.11
+FROM python:3.12
 
 WORKDIR /usr/local/server
 
-COPY ./app/ .
+COPY ./app/ ./
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 
-CMD ["python", "-m", "uvicorn", "main:app", "--bind", "0.0.0.0"]
+EXPOSE 80
+
+CMD ["python3", "-m", "uvicorn", "--host", "0.0.0.0", "--port", "80", "main:app"]
