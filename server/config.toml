@@ -1,0 +1,40 @@
+title = "StyleGAN API"
+version = "1.0.0"
+description = "Simplified Web REST API of the StyleGAN"
+docs = true
+redoc = true
+lossy = false
+
+[server]
+gpu = false
+logger = "gunicorn.error"
+
+[server.http.cors]
+enabled = true
+origins = ["*"]
+
+[models]
+[models.ffhq]
+file = "core/models/ffhq.hdf5"
+name = "FFHQ"
+description = "Flickr-Faces-HQ"
+
+[models.afhq]
+file = "core/models/afhq.hdf5"
+name = "AFHQ"
+description = "Animal Faces-HQ"
+
+[models.anime]
+file = "core/models/anime.hdf5"
+name = "Anime"
+description = "Anime Faces"
+
+[models.mnist]
+file = "core/models/mnist.hdf5"
+name = "MNIST"
+description = "Hand-written grayscale digits from 0-9"
+
+[models.k49]
+file = "core/models/k49.hdf5"
+name = "Kuzushiji-49"
+description = "48 Hiragana characters and one Hiragana iteration mark"
