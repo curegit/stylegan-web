@@ -10,4 +10,4 @@ FROM busybox
 WORKDIR /www/
 COPY --from=build-stage /app/dist/ ./
 EXPOSE 80
-CMD ["busybox", "httpd", "-f", "-v", "-p", "80"]
+CMD ["busybox", "httpd", "-vv", "-f", "-h", ".", "-p", "80"]
