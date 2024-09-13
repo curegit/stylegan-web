@@ -3,7 +3,8 @@ WORKDIR /app/
 COPY ./app/package.json ./
 RUN npm install
 COPY ./app/ ./
-RUN npm run build
+ARG VITE_STYLEGAN_API=
+RUN VITE_STYLEGAN_API="${VITE_STYLEGAN_API}" npm run build
 
 FROM busybox
 WORKDIR /www/
