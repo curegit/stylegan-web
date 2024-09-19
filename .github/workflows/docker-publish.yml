@@ -34,6 +34,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: server/app
+          context: server
           push: true
           tags: ${{ env.IMAGE_NAME_SERVER }}:latest
