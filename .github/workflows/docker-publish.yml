@@ -42,4 +42,5 @@ jobs:
         with:
           context: server
           push: true
-          tags: ${{ env.IMAGE_NAME_SERVER }}:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
