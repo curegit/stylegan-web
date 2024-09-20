@@ -10,6 +10,8 @@ This repository consists of the following two submodules:
 ## Compose Locally
 
 ```sh
+git clone --recursive https://github.com/curegit/stylegan-web.git
+cd stylegan-web
 docker compose build
 docker compose up
 ```
