@@ -1,6 +1,6 @@
 # StyleGAN Web Containers
 
-This project provides example configurations for deploying StyleGAN models using Docker, integrated with FastAPI for the backend and Vue.js for the frontend.
+This project provides sample configurations for deploying StyleGAN models and web-based user interface using Docker, integrated with FastAPI for the backend and Vue.js for the frontend.
 
 This repository consists of the following two submodules:
 
