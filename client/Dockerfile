@@ -6,7 +6,7 @@ COPY ./app/ ./
 ARG VITE_STYLEGAN_API=
 RUN VITE_STYLEGAN_API="${VITE_STYLEGAN_API}" npm run build
 
-FROM busybox
+FROM busybox:stable
 WORKDIR /www/
 COPY --from=build-stage /app/dist/ ./
 EXPOSE 80
